@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anyreals</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">Anyreals</div>
+
+
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <nav id="navMenu">
+
+    <a href="index.html">Home</a>
+    <a href="properties.html">Properties</a>
+    <a href="property-services.html">Property Services</a>
+  
+    <div id="navAuth"></div>
+  
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Find Verified Properties Across Nigeria</h1>
+    <p>Buy, rent, or invest with confidence</p>
+
+    <div class="search-box">
+      <input type="text" id="searchLocation" placeholder="Location">
+
+      <select id="searchType">
+        <option value="">Property Type</option>
+        <option>Apartment</option>
+        <option>House</option>
+        <option>Land</option>
+      </select>
+
+      <select id="searchPrice">
+        <option value="">Price Range</option>
+        <option value="low">Below ₦5M</option>
+        <option value="mid">₦5M - ₦20M</option>
+        <option value="high">Above ₦20M</option>
+      </select>
+
+      <button onclick="handleSearch()">Search</button>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="section">
+  <h2>Featured Properties</h2>
+  <div class="property-grid">
+    <!-- placeholder cards -->
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section light">
+  <h2>Why Anyreals</h2> <br><br>
+  <div class="why-grid">
+    <div>✔ Verified Listings</div>
+    <div>🏢 CAC Registered</div>
+    <div>🤝 Trusted Agents</div>
+  </div>
+</section>
+
+<!-- RECENTLY VIEWED -->
+<section class="section" id="recentSection" style="display:none;">
+  <h2>Recently Viewed</h2>
+  <div class="property-grid" id="recentGrid"></div>
+</section>
+
+<!-- SERVICES PREVIEW -->
+<section class="section light">
+  <h2>Property Services</h2> <br><br>
+
+  <div class="services-grid">
+    <div class="service-card">C of O Processing</div>
+    <div class="service-card">Governor’s Consent</div>
+    <div class="service-card">Registered Survey</div>
+  </div>
+<br><br>
+  <a href="property-services.html" class="btn center">Explore Services</a>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Looking to buy or secure your property?</h2> <br>
+  <button onclick="goToProperties()">Browse Properties</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 Anyreals</p>
+</footer>
+<script src="property.js"></script>
+<script src="main.js"></script>
+<script type="module" src="auth-state.js"></script>
+<script type="module" src="navbar.js"></script>
+</body>
+</html>
